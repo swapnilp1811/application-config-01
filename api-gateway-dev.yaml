@@ -25,7 +25,6 @@ spring:
               predicates:
                 - Path=/eureka/main
               filters:
-                - StripPrefix=1
                 - SetPath=/
               
 
