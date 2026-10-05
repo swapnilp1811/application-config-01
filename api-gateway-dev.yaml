@@ -10,8 +10,12 @@ spring:
           routes:
             - id: student-service
               uri: lb://student-service
+              predicates:
+                - Path: /**
             - id: address-service
               uri: lb://address-service
+              predicates:
+                - Path: /**
 
 eureka:
   client:
