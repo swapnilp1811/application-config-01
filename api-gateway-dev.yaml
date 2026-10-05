@@ -11,11 +11,11 @@ spring:
             - id: student-service
               uri: lb://student-service
               predicates:
-                - Path:/student/**
+                - Path=/student/**
             - id: address-service
               uri: lb://address-service
               predicates:
-                - Path:/address/**
+                - Path=/address/**
 
 eureka:
   client:
